@@ -10,7 +10,7 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 - Timer will auto stop when switch to another session
 
 # 📌 Live Demo
-You can see the live demo here! https://gaudhiwaa.github.io/PomodoroTimer/
+You can see the live demo here! https://gaudhiwaa.github.io/Pomodoro-Timer/
 
 # User Interface
 ![Pomodoro UI](https://user-images.githubusercontent.com/88303669/130407905-9142de8a-e494-4ead-b728-21ef3bc57494.jpg)

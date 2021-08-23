@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro</h1
+      <h2>Be productive the right way.</h2>
+      <div class="time-desc">
+        <div class="box">
+          <ul>
+            <li id="btn-1" onClick="shortBreak()"><button type="button" name="button">Short Break</button></li><hr>
+            <li id="btn-2" onClick="work()"><button type="button" name="button">Work</button></li><hr>
+            <li id="btn-3" onClick="longBreak()"><button type="button" name="button">Long Break</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="settings">
+        <button type="button" name="button" onclick="settings()">Settings</button>
+      </div>
+    </header>
+    <main>
+      <div class="sb" onclick="startTimerSb()">
+        <p id="countdown-sb">05 : 00</p>
+      </div>
+      <div class="w" onclick="startTimerW()">
+        <p id="countdown-w">25 : 00</p>
+      </div>
+      <div class="lb" onclick="startTimerLb()">
+        <p id="countdown-lb">10 : 00</p>
+      </div>
+      <section class="setSettings">
+        <div class="circle-1">
+          <input type="text" id="shortBreak" placeholder="5" value="05">
+        </div>
+        <div class="circle-2">
+          <input type="text" id="work" placeholder="25" value="25">
+        </div>
+        <div class="circle-3">
+          <input type="text" id="longBreak" placeholder="10" value="10">
+        </div>
+        <button type="submit" onclick="changeTimer()">Save</button>
+      </section>
+    </main>
+    <audio id="alarm-sound" loop>
+      <source src="alarm_clock.mp3" type="audio/mp3">
+    </audio>
+    <script src="index.js"></script>
+  </body>
+</html>
